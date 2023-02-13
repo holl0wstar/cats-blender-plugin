@@ -34,7 +34,7 @@ def register():
     Scene.combine_mats = BoolProperty(
         name=t('Scene.combine_mats.label'),
         description=t('Scene.combine_mats.desc'),
-        default=True
+        default=False
     )
 
     Scene.remove_zero_weight = BoolProperty(
@@ -254,7 +254,7 @@ def register():
         description=t('Scene.bake_resolution.desc'),
         default=2048,
         min=128,
-        max=4096
+        max=8192
     )
 
     Scene.bake_use_decimation = BoolProperty(
